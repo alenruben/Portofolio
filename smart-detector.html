@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Smart Smoke Detector Project</title>
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<style>
+
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+
+		body{
+			font-family:'Poppins',sans-serif;
+			background:#f5f5f5;
+			color:#222;
+			line-height:1.8;
+		}
+
+		.container{
+			width:90%;
+			max-width:1100px;
+			margin:auto;
+			padding:60px 0;
+		}
+
+		/* HEADER */
+
+		.project-header{
+			text-align:center;
+			margin-bottom:60px;
+		}
+
+		.project-header h1{
+			font-size:48px;
+			margin-bottom:15px;
+			color:#111;
+		}
+
+		.project-header p{
+			max-width:750px;
+			margin:auto;
+			color:#555;
+			font-size:18px;
+		}
+
+		/* CARD */
+
+		.card{
+			background:#fff;
+			padding:35px;
+			border-radius:20px;
+			margin-bottom:35px;
+			box-shadow:0 5px 20px rgba(0,0,0,0.06);
+		}
+
+		.card h2{
+			font-size:28px;
+			margin-bottom:25px;
+			color:#111;
+		}
+
+		.card h2 i{
+			margin-right:10px;
+		}
+
+		/* TECHNOLOGY */
+
+		.tech-list{
+			display:flex;
+			flex-wrap:wrap;
+			gap:15px;
+		}
+
+		.tech-list span{
+			background:#111;
+			color:#fff;
+			padding:10px 18px;
+			border-radius:10px;
+			font-size:14px;
+			font-weight:500;
+		}
+
+		/* FEATURE */
+
+		.feature-list{
+			padding-left:20px;
+		}
+
+		.feature-list li{
+			margin-bottom:15px;
+		}
+
+		/* IMAGE */
+
+		.image-wrapper{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			margin-top:25px;
+		}
+
+		.project-image{
+			width:100%;
+			max-width:900px;
+			max-height:550px;
+			object-fit:contain;
+			border-radius:15px;
+			background:#fff;
+			padding:10px;
+			box-shadow:0 5px 20px rgba(0,0,0,0.08);
+		}
+
+		/* FLOW */
+
+		.flow-box{
+			background:#f7f7f7;
+			padding:30px;
+			border-radius:15px;
+			text-align:center;
+			font-size:20px;
+			font-weight:600;
+			line-height:2;
+		}
+
+		/* JOBDESK */
+
+		.jobdesk-list{
+			padding-left:20px;
+		}
+
+		.jobdesk-list li{
+			margin-bottom:15px;
+		}
+
+		/* RESULT */
+
+		.result-box{
+			background:#f7f7f7;
+			padding:25px;
+			border-left:5px solid #111;
+			border-radius:10px;
+		}
+
+		/* BUTTON */
+
+		.back-btn{
+			display:inline-block;
+			margin-top:10px;
+			padding:14px 24px;
+			background:#111;
+			color:#fff;
+			text-decoration:none;
+			border-radius:10px;
+			transition:0.3s;
+		}
+
+		.back-btn:hover{
+			background:#333;
+			color:#fff;
+		}
+
+		/* RESPONSIVE */
+
+		@media(max-width:768px){
+
+			.project-header h1{
+				font-size:34px;
+			}
+
+			.card{
+				padding:25px;
+			}
+
+			.card h2{
+				font-size:24px;
+			}
+
+			.flow-box{
+				font-size:16px;
+			}
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-- JUDUL PROJECT -->
+
+		<div class="project-header">
+
+			<h1>
+				Smart Smoke Detector
+			</h1>
+
+			<p>
+				Sistem monitoring asap rokok berbasis Internet of Things (IoT)
+				yang dibuat untuk mendeteksi aktivitas merokok di toilet sekolah
+				secara real-time menggunakan sensor MQ-2, PIR, dan dashboard website.
+			</p>
+
+		</div>
+
+		<!-- DESKRIPSI -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-circle-info"></i>
+				Deskripsi Singkat
+			</h2>
+
+			<p>
+
+				Smart Smoke Detector merupakan project skripsi yang saya kerjakan
+				secara mandiri mulai dari perancangan hardware, pengembangan website,
+				integrasi database, hingga implementasi sistem monitoring real-time.
+
+				Sistem ini menggunakan sensor MQ-2 untuk mendeteksi asap rokok
+				dan sensor PIR untuk mendeteksi pergerakan di area toilet sekolah.
+
+			</p>
+
+		</div>
+
+		<!-- TEKNOLOGI -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-code"></i>
+				Teknologi yang Digunakan
+			</h2>
+
+			<div class="tech-list">
+
+				<span>ESP8266</span>
+				<span>PHP</span>
+				<span>MySQL</span>
+				<span>HTML</span>
+				<span>CSS</span>
+				<span>JavaScript</span>
+				<span>MQ-2 Sensor</span>
+				<span>PIR Sensor</span>
+				<span>LCD I2C</span>
+
+			</div>
+
+		</div>
+
+		<!-- FITUR -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-list-check"></i>
+				Fitur Sistem
+			</h2>
+
+			<ul class="feature-list">
+
+				<li>Monitoring sensor secara real-time</li>
+
+				<li>Deteksi asap rokok menggunakan sensor MQ-2</li>
+
+				<li>Deteksi gerakan menggunakan sensor PIR</li>
+
+				<li>Dashboard monitoring berbasis website</li>
+
+				<li>Penyimpanan data sensor ke database MySQL</li>
+
+				<li>Export laporan PDF dan Excel</li>
+
+				<li>Kontrol buzzer dan blower otomatis</li>
+
+			</ul>
+
+		</div>
+
+		<!-- DASHBOARD -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-desktop"></i>
+				Tampilan Dashboard
+			</h2>
+
+			<p>
+				Dashboard monitoring digunakan untuk menampilkan status sensor,
+				kondisi ruangan, status LED virtual, tampilan LCD I2C,
+				dan histori data secara real-time.
+			</p>
+
+			<div class="image-wrapper">
+
+				<img src="images/dashboard-smoke-detector.png"
+					alt="Dashboard Smart Smoke Detector"
+					class="project-image">
+
+			</div>
+
+		</div>
+
+		<!-- HARDWARE -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-microchip"></i>
+				Hardware Prototype
+			</h2>
+
+			<p>
+				Prototype hardware terdiri dari ESP8266, sensor MQ-2,
+				sensor PIR, LCD I2C, buzzer, blower, dan modul pendukung lainnya.
+			</p>
+
+			<div class="image-wrapper">
+
+				<img src="images/prototype.png"
+					alt="Hardware Prototype"
+					class="project-image">
+
+			</div>
+
+		</div>
+
+		<!-- DIAGRAM SISTEM -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-diagram-project"></i>
+				Diagram Sistem
+			</h2>
+
+			<p>
+				Diagram sistem menunjukkan alur kerja Smart Smoke Detector
+				mulai dari proses pendeteksian sensor hingga monitoring
+				melalui dashboard website.
+			</p>
+
+			<div class="image-wrapper">
+
+				<img src="images/diagram.png"
+					alt="Diagram Sistem Smart Smoke Detector"
+					class="project-image">
+
+			</div>
+
+		</div>
+
+		<!-- WIRING -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-network-wired"></i>
+				Wiring Diagram
+			</h2>
+
+			<p>
+				Wiring diagram digunakan untuk menunjukkan hubungan
+				antar komponen hardware seperti ESP8266, sensor MQ-2,
+				sensor PIR, LCD I2C, buzzer, dan blower.
+			</p>
+
+			<div class="image-wrapper">
+
+				<img src="images/wiring.png"
+					alt="Wiring Diagram Smart Smoke Detector"
+					class="project-image">
+
+			</div>
+
+		</div>
+
+		<!-- FLOW -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-arrow-down"></i>
+				Flow Sistem
+			</h2>
+
+			<div class="flow-box">
+
+				MQ-2 + PIR Sensor
+				<br>
+				↓
+				<br>
+				ESP8266
+				<br>
+				↓
+				<br>
+				MySQL Database
+				<br>
+				↓
+				<br>
+				Dashboard Website
+				<br>
+				↓
+				<br>
+				Monitoring Real-time
+
+			</div>
+
+		</div>
+
+		<!-- JOBDESK -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-user-check"></i>
+				Jobdesk Saya
+			</h2>
+
+			<ul class="jobdesk-list">
+
+				<li>Merancang dan mengembangkan project skripsi secara mandiri</li>
+
+				<li>Membuat dashboard monitoring berbasis website</li>
+
+				<li>Menghubungkan ESP8266 dengan database MySQL</li>
+
+				<li>Mengimplementasikan sensor MQ-2 dan PIR</li>
+
+				<li>Membuat fitur monitoring dan laporan data</li>
+
+				<li>Melakukan pengujian hardware dan software</li>
+
+			</ul>
+
+		</div>
+
+		<!-- HASIL -->
+
+		<div class="card">
+
+			<h2>
+				<i class="fa fa-chart-line"></i>
+				Hasil Prototype
+			</h2>
+
+			<div class="result-box">
+
+				Prototype Smart Smoke Detector berhasil dibuat
+				dan dapat mendeteksi asap rokok serta pergerakan
+				menggunakan sensor MQ-2 dan PIR.
+
+				Data sensor berhasil dikirim menggunakan ESP8266
+				dan ditampilkan pada dashboard website secara real-time
+				untuk proses monitoring.
+
+			</div>
+
+		</div>
+
+		<!-- BUTTON -->
+
+		<a href="index.html#projects" class="back-btn">
+			<i class="fa fa-arrow-left"></i>
+			Kembali ke Portfolio
+		</a>
+
+	</div>
+
+</body>
+
+</html>
